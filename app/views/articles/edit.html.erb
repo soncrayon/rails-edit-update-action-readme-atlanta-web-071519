@@ -1,0 +1,13 @@
+<h3>Edit Article</h3><br>
+
+<%= form_for @article do |f| %>
+  <%= f.label 'Article Title' %><br>
+  <%= f.text_field :title %><br>
+
+  <%= f.label 'Article Description' %><br>
+  <%= f.text_area :description %><br>
+
+  <%= f.submit "Submit Article" %>
+<% end %>
+
+<%=link_to articles_path%>
